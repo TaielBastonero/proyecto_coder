@@ -29,7 +29,6 @@ body {
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
     color: #FFC107;
-    /* Efecto hover amarillo */
 }
 
 .navbar .btn-outline-success {
@@ -42,12 +41,11 @@ body {
     color: #212529;
 }
 
-/* ----------------- Hero / Banner Principal ----------------- */
+/* ----------------- Hero Banner Principal ----------------- */
 .hero {
     position: relative;
     color: #ffd000;
     height: 60vh;
-    /* Usa el alto de la pantalla para ser responsive */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +60,6 @@ body {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6);
-    /* Oscurece la imagen para que el texto se lea mejor */
     z-index: -1;
 }
 
@@ -70,7 +67,6 @@ body {
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    /* Sombra para legibilidad */
 }
 
 .medio {
@@ -146,6 +142,22 @@ body {
     border-color: #343a40;
 }
 
+/* ----------------- Footer ----------------- */
+footer {
+    background-color: #000000;
+    color: #fff;
+    margin-top: auto;
+}
+
+footer svg path {
+    fill: #fff;
+    transition: fill 0.3s ease;
+}
+
+footer a:hover svg path {
+    fill: #FFC107;
+}
+
 /* ----------------- Estilos para el Carrusel ----------------- */
 #zapatillasCarousel .carousel-caption {
     background-color: rgba(33, 37, 41, 0.7);
@@ -183,33 +195,40 @@ body {
     margin: 0 auto;
 }
 
-/* ----------------- Títulos de la sección de calzado ----------------- */
-main h2 {
+/* ----------------- Estilos para la sección de Contacto  ----------------- */
+.contact-section {
     color: #000000;
 }
 
-
-/* ----------------- Footer ----------------- */
-footer {
-    background-color: #000000;
-    color: #fff;
-    margin-top: auto;
+.contact-title {
+    color: #000000;
 }
 
-footer svg path {
-    fill: #fff;
-    transition: fill 0.3s ease;
+.contact-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
-footer a:hover svg path {
-    fill: #FFC107;
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    align-items: start; 
 }
 
+.contact-info-box {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
 
-/* ----------------- responsive para varios tipos de pantallas   ----------------- */
+.contact-subtitle {
+    color: #FFC107;
+}
+
+/* ----------------- responsive para pantallas ----------------- */
 @media (max-width: 992px) {
 
-    /* para ver en tablet */
+    /* para las tablets */
     .medio h3 {
         font-size: 2rem;
     }
@@ -220,18 +239,20 @@ footer a:hover svg path {
 }
 
 @media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr; 
+    }
+
     .hero h2 {
         font-size: 2.2rem;
     }
 
     .medio {
         padding: 4rem 0;
-        /* ajuste para celular */
     }
 
     .medio .row {
         flex-direction: column;
-        /* Apila imagen y texto en celus */
     }
 
     .medio .col-md-6:first-child {
@@ -240,7 +261,6 @@ footer a:hover svg path {
 
     .medio img {
         margin-bottom: 2rem;
-        /* Espacio entre imagen y texto */
     }
 
     .medio h3 {
@@ -251,3 +271,4 @@ footer a:hover svg path {
         font-size: 0.95rem;
     }
 }
+
