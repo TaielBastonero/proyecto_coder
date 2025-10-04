@@ -1,0 +1,20 @@
+@use "../base/generales" as g;
+
+/*==========================================================
+  Footer (Anidamiento para SVG)
+==========================================================*/
+footer {
+    background-color: g.$color-fondo;
+    color: #fff;
+    margin-top: auto;
+    padding: 1.5rem 0; 
+
+    svg path {
+        fill: #fff;
+        transition: fill 0.3s ease;
+    }
+
+    a:hover svg path {
+        fill: g.$color-secundario;
+    }
+}

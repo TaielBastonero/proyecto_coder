@@ -1,0 +1,35 @@
+@use "../base/generales" as g;
+
+/*==========================================================
+  Barra de Navegación (.navbar)
+==========================================================*/
+.navbar {
+    background-color: g.$color-primario;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .navbar-brand {
+        color: g.$color-texto-oscuro;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .nav-link {
+        color: g.$color-texto-oscuro;
+        font-weight: bold;
+
+        &:hover,
+        &.active {
+            color: g.$color-secundario;
+        }
+    }
+
+    .btn-outline-success {
+        border-color: g.$color-texto-oscuro;
+        color: g.$color-texto-oscuro;
+
+        &:hover {
+            background-color: g.$color-secundario;
+            color: g.$color-gris-oscuro;
+        }
+    }
+}

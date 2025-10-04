@@ -1,0 +1,26 @@
+/*==========================================================
+  Variables
+==========================================================*/
+$color-primario: #ffee00; // Amarillo de la navbar
+$color-secundario: #FFC107; // Amarillo/Oro para énfasis (hover, titles)
+$color-fondo: #000000;
+$color-texto-oscuro: #000000;
+$color-texto-claro: #e0e0e0;
+$color-seccion-media: #1f1f1f;
+$color-gris-oscuro: #212529;
+
+$sombra-media: 0 4px 8px rgba(0, 0, 0, 0.1);
+$sombra-fuerte: 0 8px 20px rgba(0, 0, 0, 0.4);
+
+/*==========================================================
+  Estilos Generales
+==========================================================*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $color-fondo;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
