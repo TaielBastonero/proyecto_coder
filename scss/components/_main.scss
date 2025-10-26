@@ -103,7 +103,7 @@
         font-weight: bold;
 
         &:hover {
-            // Usamos la función adjust del módulo color y la variable con alias
+            
             background-color: color.adjust(g.$color-gris-oscuro, $lightness: -5%); 
             border-color: color.adjust(g.$color-gris-oscuro, $lightness: -5%);
         }
